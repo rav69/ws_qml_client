@@ -7,7 +7,7 @@ ApplicationWindow {
     width: 640
     height: 480
     visible: true
-    title: qsTr("WebSocket")
+    title: qsTr("WebSocketClient")
 
     property var textButton: ["Start", "Stop"]
     property bool autoReconnect: true
@@ -16,6 +16,7 @@ ApplicationWindow {
 
     WebSocket {
         id: socket
+        // url: "ws://localhost:12345"
         url: "ws://192.9.192.229:12345"
 
         onTextMessageReceived: function(message) {
