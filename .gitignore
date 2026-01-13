@@ -1,0 +1,9 @@
+# Gradle files
+.gradle/
+build/
+
+# QtCreator
+CMakeLists.txt.user*
+
+*.pro.user
+*.pro.user.*
